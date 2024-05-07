@@ -19,6 +19,11 @@ app.use('/api/producers',producerroute)
 const actorRoute=require('./api/actorRoute')
 app.use('/api/actors',actorRoute)
 
+
+      app.get('/',(req,res)=>{
+  res.send("hii")
+})
+
 const movieRoute= require('./api/movieRoute')
 app.use('/api/movies',movieRoute)
 app.listen(8080,()=>{
